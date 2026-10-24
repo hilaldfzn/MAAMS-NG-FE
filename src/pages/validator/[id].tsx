@@ -142,7 +142,7 @@ const ValidatorDetailPage: React.FC = () => {
     const getQuestionData = async () => {
         if (!id) return
         try {
-          const response = await axiosInstance.get(`api/v1/question/${id}`)
+          const response = await axiosInstance.get(`api/v1/question/${id}/`)
           const receivedData: ValidatorData = response.data
           setValidatorData(receivedData)
         } catch (error: any) {
