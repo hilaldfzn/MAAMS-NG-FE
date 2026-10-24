@@ -166,7 +166,7 @@ describe('ValidatorDetailPage', () => {
     render(<WrappedValidatorDetailPage />)
     
     await waitFor(() => {
-      expect(mockedAxios.get).toHaveBeenCalledWith('api/v1/question/123')
+      expect(mockedAxios.get).toHaveBeenCalledWith('api/v1/question/123/')
       expect(mockedAxios.get).toHaveBeenCalledWith('api/v1/cause/123/')
     })
   })
